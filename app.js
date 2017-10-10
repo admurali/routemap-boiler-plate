@@ -3,6 +3,10 @@
 var logger = require('logging-express-mw');
 // Middleware for writing good apis
 var routeMap = require('routemap-express-mw');
+// Middleware to integrate with bookshelf apis
+var bookshelf = require('bookshelf-express-mw');
+// Middleware for writing good apis
+var routeMap = require('routemap-express-mw');
 // Parse incoming request bodies in a middleware
 // before your handlers, available under
 // the req.body property.
@@ -35,7 +39,6 @@ app.use(bodyParser.text({ type: 'text/html' }))
 //   "optionsSuccessStatus": 204
 // }
 app.use(cors());
-
 // Need to use `req.logger`
 app.use(logger.middleware());
 // mw to write elegant apis

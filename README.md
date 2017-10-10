@@ -2,6 +2,7 @@
 ## Middlewares
 * logging-express-mw -  allow routemap to log and traces functions
 * routemap-express-mw - routemap will allow a user to write elegant apis with a standardized workflow of promise that is logged and easy to debug
+* bookshelf-express-mw - allows ease of ORM type integration [default not used]
 
 ## Other dependencies
 * dotenv -  Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
@@ -13,3 +14,6 @@
 * Copy environment variables: ```cp .env.sample .env```
 * Start swagger server: ```swagger project start```
 * Edit api/docs: ```swagger project edit```
+
+## Optional
+* Add following code to enable bookshelf middleware ORM if using database ```app.use(bookshelf.middleware());```
