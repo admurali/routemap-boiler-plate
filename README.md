@@ -10,8 +10,12 @@
 * cors - CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 * swagger-express-mw - express middle using swagger routes
 
-## Usage
+## Installation
 * Copy environment variables: ```cp .env.sample .env```
+* Install modules: ```npm install```
+* Swagger: ```npm install -g swagger```
+
+## Usage
 * Start swagger server: ```swagger project start```
 * Edit api/docs: ```swagger project edit```
 

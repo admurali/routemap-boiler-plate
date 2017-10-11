@@ -16,7 +16,6 @@ function resolveHello(req, res, resolve, reject) {
     var name = req.swagger.params.name.value || process.env.HELLO_DEFAULT;
     var hello = util.format('Hello, %s!', name);
     // this sends back a JSON response which is a single string
-    req.logger.debug(`At resolveHello`);
     resolve(hello);
   });
 }

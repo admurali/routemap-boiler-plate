@@ -25,7 +25,9 @@ var config = {
 };
 
 // parse various different custom JSON types as JSON
-app.use(bodyParser.json({ type: 'application/*+json' }))
+app.use(bodyParser.json({ type: 'application/*+json' }));
+app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // parse some custom thing into a Buffer
 app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }))
 // parse an HTML body into a string
